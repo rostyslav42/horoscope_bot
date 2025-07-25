@@ -70,7 +70,7 @@ class User(AbstractUser):
     REQUIRED_FIELDS = []
     objects = UserManager()
     first_name = models.CharField(_("first name"), max_length=150, blank=True, null=True)
-    last_name = models.CharField(_("last name"), max_length=150, blank=True,  null=True)
+    last_name = models.CharField(_("last name"), max_length=150, blank=True, null=True)
 
     telegram_id = models.BigIntegerField(unique=True, null=True)
     telegram_username = models.CharField(max_length=255, null=True)
