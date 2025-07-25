@@ -1,0 +1,36 @@
+[project]
+name = "goroskop-bot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "aiogram>=3.21.0",
+    "black>=25.1.0",
+    "celery>=5.5.3",
+    "django-celery-beat>=2.8.1",
+    "django-celery-results>=2.6.0",
+    "djangorestframework>=3.16.0",
+    "djangorestframework-simplejwt>=5.5.1",
+    "psycopg2>=2.9.10",
+    "psycopg2-binary>=2.9.10",
+    "python-dotenv>=1.1.1",
+    "redis>=6.2.0",
+    "requests>=2.32.4",
+    "ruff>=0.12.5",
+]
+
+[tool.ruff]
+exclude = ["**/migrations/*"]
+line-length = 128
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "COM"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.black]
+exclude = "migrations/"
+extend-exclude = ".venv/"
+line-length = 128
