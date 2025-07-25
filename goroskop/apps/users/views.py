@@ -6,8 +6,7 @@ from goroskop.apps.users.serializers import UserSerializer
 from goroskop.constants import LANGUAGES
 
 
-class UserViewSet(mixins.CreateModelMixin,
-                   viewsets.GenericViewSet):
+class UserViewSet(mixins.CreateModelMixin, viewsets.GenericViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 

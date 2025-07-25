@@ -8,6 +8,7 @@ dependencies = [
     "aiogram>=3.21.0",
     "black>=25.1.0",
     "celery>=5.5.3",
+    "deep-translator>=1.11.4",
     "django-celery-beat>=2.8.1",
     "django-celery-results>=2.6.0",
     "djangorestframework>=3.16.0",
